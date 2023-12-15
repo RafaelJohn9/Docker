@@ -3,7 +3,7 @@ This is a repository that deals with docker the basics and some advanced stuff
 
 Certainly! Docker is a powerful tool for containerization, and here are some practical exercises to help you get hands-on experience with Docker on a Linux system. Before starting, make sure Docker is installed on your machine.
 
-##Exercise 1: Basic Container Operations
+*Exercise 1:* **Basic Container Operations**
 Run a simple container:
 
 Pull the latest Ubuntu image from Docker Hub.
@@ -16,7 +16,7 @@ List all running containers.
 List all containers, including stopped ones.
 Stop a running container.
 Remove a container.
-##Exercise 2: Docker Images
+*Exercise 2:* **Docker Images**
 Create a Dockerfile:
 
 Create a directory for your Dockerfile.
@@ -50,7 +50,7 @@ Expose Ports:
 Run a container with a service that listens on a specific port.
 Map the container port to a different port on the host machine.
 Access the service from your host machine's web browser.
-##Exercise 5: Docker Volumes
+*Exercise 5*: **Docker Volumes**
 Persistent Data with Volumes:
 
 Run a container with a volume mounted for persistent storage.
@@ -62,7 +62,7 @@ Use a bind mount to share a host machine directory with a container.
 Modify files in the host directory and observe changes inside the container.
 
 
-##Advanced Task 1: Docker Swarm Deployment
+*Advanced Task 1:* **Docker Swarm Deployment**
 Objective:
 Set up a Docker Swarm cluster and deploy a multi-service application.
 
@@ -87,7 +87,7 @@ Health Checks:
 Implement health checks for at least one service in the Compose file.
 Verify how Docker Swarm responds to failing health checks.
 
-##Advanced Task 2: Docker Security
+*Advanced Task 2:* **Docker Security**
 Objective:
 Explore Docker security features and best practices.
 
