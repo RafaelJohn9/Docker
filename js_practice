@@ -1,0 +1,6 @@
+FROM node:11-alpine
+
+WORKDIR /app
+ENV age="mind your business"
+COPY compute.js .
+CMD node compute.js
