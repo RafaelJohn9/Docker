@@ -1,4 +1,9 @@
-A docker file is more like a file that contains code
+# Notes
+A private registry allows you to pick and choose who would have access to your private images while a public registry gives allows everyone to access your private images
+---
+
+## A docker file is more like a file that contains code
+---
 It is executed sequentially while building the images
 
 Important things to look at when building an image are:
@@ -16,4 +21,5 @@ b) *The order of the commands written*
 Images being rebuilt often use caches to save on time during building:
 	•Write the constant commands first (commands that won't change much during building or won't be affected by changes that much)
 	•Variable commands come later (such as COPY; a new file might be added to the directory)
-
+---
+[![Video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
