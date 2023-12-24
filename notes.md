@@ -22,4 +22,4 @@ Images being rebuilt often use caches to save on time during building:
 	•Write the constant commands first (commands that won't change much during building or won't be affected by changes that much)
 	•Variable commands come later (such as COPY; a new file might be added to the directory)
 ---
-[![Video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![Video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
