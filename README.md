@@ -39,7 +39,7 @@ Environment Variables in Compose:
 Modify your Compose file to use environment variables for configuration.
 Use a .env file to set values for the environment variables.
 Re-run the Compose file, ensuring the application still works.
-*Exercise 4*: Networking
+- [ ]*Exercise 4*: Networking
 Container Networking:
 
 Create a custom bridge network.
@@ -50,7 +50,7 @@ Expose Ports:
 Run a container with a service that listens on a specific port.
 Map the container port to a different port on the host machine.
 Access the service from your host machine's web browser.
-*Exercise 5*: **Docker Volumes**
+- [ ]*Exercise 5*: **Docker Volumes**
 	Persistent Data with Volumes:
 
 Run a container with a volume mounted for persistent storage.
@@ -62,7 +62,7 @@ Use a bind mount to share a host machine directory with a container.
 Modify files in the host directory and observe changes inside the container.
 
 
-*Advanced Task 1:* **Docker Swarm Deployment**
+- [ ]*Advanced Task 1:* **Docker Swarm Deployment**
 Objective:
 Set up a Docker Swarm cluster and deploy a multi-service application.
 
@@ -87,7 +87,7 @@ Health Checks:
 Implement health checks for at least one service in the Compose file.
 Verify how Docker Swarm responds to failing health checks.
 
-*Advanced Task 2:* **Docker Security**
+- [ ]*Advanced Task 2:* **Docker Security**
 Objective:
 Explore Docker security features and best practices.
 
