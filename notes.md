@@ -44,3 +44,23 @@ orchestration tools are tools that make your life easier when it comes to mainta
 
 an example of kubernetes file
 ![kubernetes image](./images/kubernetes.png)
+
+
+
+
+
+Docker containers can be connected using a network that you create yourself:
+	it will act like two containers that are connected to a network as long as the container 
+         has a name you can referrence it as url *http://container1* and it works. You can add the port if need be.
+
+
+
+
+
+For persistent volume (if I always respawn a new container and I need some data to always appear there)
+![volume creation image](./images/volume.png)
+
+
+**Bind mounts**
+So for bind mounts its a two way street changes made in the container files will also reflect in the host files and also changes made in the host files
+		will also appear in the container files(*two way street*)

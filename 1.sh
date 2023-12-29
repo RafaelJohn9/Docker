@@ -17,7 +17,7 @@ docker ps -a
 docker ps
 
 # stoppin a running container
-docker stop <container_id>
+docker stop container_name_or_id
 
 # removing a container
-docker rm <container_id>
+docker rm container_name_or_ie
