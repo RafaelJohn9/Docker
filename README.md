@@ -3,7 +3,7 @@ This is a repository that deals with docker the basics and some advanced stuff
 
 Certainly! Docker is a powerful tool for containerization, and here are some practical exercises to help you get hands-on experience with Docker on a Linux system. Before starting, make sure Docker is installed on your machine.
 
-*Exercise 1:* **Basic Container Operations**
+- [x] *Exercise 1:* **Basic Container Operations**
 Run a simple container:
 
 Pull the latest Ubuntu image from Docker Hub.
@@ -16,7 +16,7 @@ List all running containers.
 List all containers, including stopped ones.
 Stop a running container.
 Remove a container.
-*Exercise 2:* **Docker Images**
+- [x] *Exercise 2:* **Docker Images**
 Create a Dockerfile:
 
 Create a directory for your Dockerfile.
@@ -28,7 +28,7 @@ Run a container from the image you created.
 Install additional software or make changes inside the container.
 Commit the changes to a new image.
 Push the new image to Docker Hub (you'll need an account).
-##Exercise 3: Docker Compose
+- [x] *Exercise 3*: **Docker Compose**
 Compose Multi-Container Application:
 
 Create a Docker Compose file for a simple web application with two services: a web server and a database (e.g., Nginx and MySQL).
@@ -39,7 +39,7 @@ Environment Variables in Compose:
 Modify your Compose file to use environment variables for configuration.
 Use a .env file to set values for the environment variables.
 Re-run the Compose file, ensuring the application still works.
-##Exercise 4: Networking
+*Exercise 4*: Networking
 Container Networking:
 
 Create a custom bridge network.
@@ -51,7 +51,7 @@ Run a container with a service that listens on a specific port.
 Map the container port to a different port on the host machine.
 Access the service from your host machine's web browser.
 *Exercise 5*: **Docker Volumes**
-Persistent Data with Volumes:
+	Persistent Data with Volumes:
 
 Run a container with a volume mounted for persistent storage.
 Write data to the volume from inside the container.

@@ -1,0 +1,22 @@
+version:  '1'
+
+services:
+ web_server:
+  image: nginx:latest
+  ports:
+    - "8080:80"
+  networks:
+    - myNetwork
+  environment:
+   WELCOME: ${GREETINGS}
+   
+ linux_cmdline:
+   image: ubuntu:latest
+   networks:
+     - myNetwork
+   environment:
+     AUTHOR: ${AUTHOR}
+
+networks:
+  myNetwork:
+    driver: bridge
