@@ -62,7 +62,7 @@ Use a bind mount to share a host machine directory with a container.
 Modify files in the host directory and observe changes inside the container.
 
 
-- [ ] *Advanced Task 1:* **Docker Swarm Deployment**
+- [x] *Advanced Task 1:* **Docker Swarm Deployment**
 Objective:
 Set up a Docker Swarm cluster and deploy a multi-service application.
 
@@ -87,7 +87,7 @@ Health Checks:
 Implement health checks for at least one service in the Compose file.
 Verify how Docker Swarm responds to failing health checks.
 
-- [ ] *Advanced Task 2:* **Docker Security**
+- [x] *Advanced Task 2:* **Docker Security**
 Objective:
 Explore Docker security features and best practices.
 

@@ -1,0 +1,36 @@
+version: '1'
+
+services:
+  web-app:
+    image: debian:11
+    ports:
+      - "80:80"
+    networks:
+      - my_overlay_network
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        conditon: on-failure
+
+    database:
+      image: ubuntu:latest
+      networks:
+        - my_overlay_network
+
+    caching:
+      image: nginx:latest
+      networks:
+        - my_overlay_network
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  my_overlay_network:
+    external: true

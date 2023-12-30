@@ -1,0 +1,8 @@
+# in a Docker file:
+
+export DOCKER_CONTENT_TRUST=1        # to disable it just change it to zero
+
+# on terminal
+docker tag your_image your_dockerhub_username/your_image:signed
+docker trust sign your_dockerhub_usrname/your_image:signed
+docker push your_dockerhub_username/your_image:signed

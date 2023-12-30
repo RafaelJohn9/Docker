@@ -64,3 +64,29 @@ For persistent volume (if I always respawn a new container and I need some data 
 **Bind mounts**
 So for bind mounts its a two way street changes made in the container files will also reflect in the host files and also changes made in the host files
 		will also appear in the container files(*two way street*)
+
+
+
+**overlay network**
+Overlay network is a type of network for containers that allows them to communicate even if they are in different hosting machines
+
+**docker content trust**
+
+If a Docker image is tampered with and the tampered version is different from the one that was signed and published, Docker Content Trust (DCT) will prevent the pulled image from running. Here's how it works:
+
+Image Tampering:
+
+Let's say an attacker manages to tamper with the contents of a Docker image after it has been signed and published. This could involve modifying the files, adding malicious code, or making any unauthorized changes.
+Signature Verification:
+
+When a user or system attempts to pull the tampered image, Docker Content Trust checks for the presence of a valid signature and retrieves the corresponding public key.
+Invalid Signature:
+
+If the tampered image does not match the signature created with the private key during the signing process, the digital signature verification will fail.
+Preventing Execution:
+
+In the case of a failed signature verification, Docker Content Trust prevents the pulled image from being executed. It considers the image compromised or tampered with, and as a security measure, it refuses to run the container.
+Error Message:
+
+The user attempting to pull the image will typically receive an error message indicating that the image's signature is invalid. The error message helps alert users to the potential security issue and prevents the use of a compromised image.
+By preventing the execution of containers with tampered images, DCT helps maintain the integrity of the containerized environment and reduces the risk of running malicious or unauthorized code. This security feature is especially critical in production environments where the trustworthiness of container images is paramount.
